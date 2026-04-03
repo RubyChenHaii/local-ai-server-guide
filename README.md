@@ -36,7 +36,7 @@
 | 檔案 | 說明 |
 |------|------|
 | [`GUIDE.md`](./GUIDE.md) | 完整指南的 Markdown 版本，適合直接在 GitHub 上閱讀 |
-| [`LMStudio_Guide.pdf`](./LMStudio_Guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
+| [`local_ai_server_guide.pdf`](local_ai_server_guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
 
 ---
 
