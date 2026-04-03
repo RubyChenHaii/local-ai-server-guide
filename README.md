@@ -1,2 +1,85 @@
-# local-ai-server-guide
-Windows 本地 AI 伺服器建置全攻略！(Currently only available in Traditional Chinese; contributions for other languages are welcome)
+# 🖥️ local-ai-server-guide
+
+> **在自己的電腦上，免費跑起一台私有 AI 伺服器。**
+> 從硬體選型、模型下載、API 架設，到效能調校——一份指南全搞定。
+
+---
+
+繁體中文 | Windows 10 / 11 | LM Studio 0.3.x+ | MIT License
+
+---
+
+## 📖 這份指南是什麼？
+
+這是一份由實際開發日誌整理而成的技術指南，記錄了在 Windows 家用電腦上架設本地開源 AI 伺服器的完整過程。
+
+它不只告訴你**怎麼做**，也解釋**為什麼這樣做**——讓你理解每一個設定背後的硬體邏輯，未來遇到不同硬體或新版軟體時，也能自己做出正確判斷。
+
+本文使用的所有工具，在 2026 年 3–4 月時均為開源狀態。只要硬體條件達標，軟體的取得基本完全免費。（若串接 Gemini、Claude 等外部 API 則例外）
+
+---
+
+## 🌏 為什麼要寫這份指南？
+
+本地 AI 部署是一項仍在快速演進中的技術，目前絕大多數的教學資源、論壇討論與官方文件，都以英文為主。對許多台灣開發者而言，光是讀懂術語就已是一道門檻，更別說遇到錯誤時，還要同時消化英文錯誤訊息和英文解法。
+
+這份指南撰寫的初衷，就是試圖補足**中文語境的缺口**——讓台灣的開發者、創作者、或任何對本地 AI 感到好奇的人，都能有一個**語言友善的第一入口**，不需要先過一道英文關卡，就能開始動手實作。
+
+當然，深入排錯、追蹤最新模型、閱讀社群討論，終究還是難免需要接觸英文資源。但至少在起步階段，你可以用自己最熟悉的語言，把環境架起來、把模型跑起來、把第一個本地 AI 伺服器真正啟動。
+
+> 如果這份文件對你有幫助，歡迎分享給同樣在摸索的朋友，或透過 PR 一起讓它更完整。 🙌
+
+---
+
+## 📂 檔案說明
+
+| 檔案 | 說明 |
+|------|------|
+| [`GUIDE.md`](./GUIDE.md) | 完整指南的 Markdown 版本，適合直接在 GitHub 上閱讀 |
+| [`LMStudio_Guide.pdf`](./LMStudio_Guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
+
+---
+
+## 📋 章節目錄
+
+| 章節 | 內容摘要 |
+|------|----------|
+| [第一章：核心術語](./GUIDE.md#第一章ai-核心術語解析) | 參數、量化、上下文窗口、GGUF 格式的詳細解說 |
+| [第二章：硬體與模型匹配](./GUIDE.md#第二章硬體資源的調度邏輯) | VRAM / RAM 的速度差異，以及各硬體等級的建議配置 |
+| [第三章：伺服器架設流程](./GUIDE.md#第三章本地-ai-伺服器架設流程) | 從安裝 LM Studio 到啟動 API Server 的完整步驟 |
+| [第四章：API 整合與自然語言優化](./GUIDE.md#第四章api-整合與讓-ai-說人話) | OpenAI 協定、System Prompt 調教、Chat Template 選擇 |
+| [第五章：效能優化設定](./GUIDE.md#第五章lm-studio-效能優化設定) | LM Studio 五個關鍵設定的邏輯與建議值 |
+| [第六章：除錯手冊](./GUIDE.md#第六章常見問題與除錯手冊) | 常見錯誤與速度異常的完整排查流程 |
+| [第七章：操作心法](./GUIDE.md#第七章操作心法與長期建議) | 核心哲學、快速檢查清單與長期使用建議 |
+
+---
+
+## ⚡ 快速預覽：你能達到什麼效果？
+
+| 硬體 | 建議模型 | 預期速度 |
+|------|----------|----------|
+| 文書筆電（無顯卡） | 1B–3B Q4 | 3–10 t/s（CPU 模式） |
+| Apple Silicon MacBook | 7B–13B Q4 | 20–35 t/s（Metal 加速） |
+| 中階電競筆電（6GB VRAM） | 7B Q4_K_M | 20–35 t/s |
+| 高階桌機（12GB VRAM） | 9B Q6_K | 30–50 t/s |
+| 高階工作站（24GB+ VRAM） | 30B–35B Q4 | 15–25 t/s |
+
+---
+
+## 🛠️ 使用的工具
+
+- **[LM Studio](https://lmstudio.ai/)** — 本地模型載入與 API 伺服器
+- **[Hugging Face](https://huggingface.co/)** — GGUF 模型下載來源
+- **[Open WebUI](https://github.com/open-webui/open-webui)**（選用）— 類 ChatGPT 網頁介面
+- **Python 3.12** + **Node.js**（選用）— 延伸腳本與插件支援
+
+---
+
+## 📄 授權
+
+本文件以 **MIT License** 全部開源，歡迎自由使用、修改與分享，請保留原作者署名。
+
+---
+
+*Compiled with love by **Ruby Chen** · GitHub [@RubyChenHaii](https://github.com/RubyChenHaii)*
+*Claude Sonnet 協作*
