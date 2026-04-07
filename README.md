@@ -81,12 +81,12 @@
 這個表格的目標是希望建立一個數據庫，旨在幫助開發者直觀的了解不同硬體配置在執行特定模型時的真實表現。    
 歡迎PR，將你的數據更新上來，讓社群一起強大！
 
-| GPU 型號 | VRAM | RAM | 模型名稱 (GGUF) | 量化等級 | <abbr title="KV Cache 量化：KV Cache(鍵值快取) 是 AI 的「短期記憶運算區」，量化KV Cache 即代表「壓縮短期記憶」。">KV 量化</abbr> | <abbr title="Tokens per Second: 模型生成文字的速度">t/s</abbr> | <abbr title="Time to First Token: 按下 Enter 到第一個字出現的時間">TTFT</abbr> | <abbr title="Host: 你跑模型的軟體平台，如vLLM, Ollama">Host</abbr> | VRAM 佔用 |
+| GPU 型號 | VRAM | RAM | 模型名稱 (GGUF) | 量化等級 | <abbr title="KV Cache 量化：KV Cache(鍵值快取) 是 AI 的「短期記憶運算區」，量化KV Cache 即代表「壓縮短期記憶」。">ⓘ KV 量化</abbr> | <abbr title="Tokens per Second: 模型生成文字的速度">ⓘ t/s</abbr> | <abbr title="Time to First Token: 按下 Enter 到第一個字出現的時間">ⓘ TTFT</abbr> | <abbr title="Host: 你跑模型的軟體平台，如vLLM, Ollama">ⓘ Host</abbr> | VRAM 佔用 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | RTX 3080 Ti | 12GB | 96GB | Qwen 3.5 9B Instruct | Q6_K | Q4_0 | 33.60 t/s | 1.65s | LM Studio | 10.5GB / 12GB |
 | RTX 2060 (Mobile) | 6GB | 32GB | 待補 | N/A | N/A | N/A |  N/A | N/A | N/A |
 
-> (為追求入門者的易讀性，這個表格是簡易版。未列於此表格的資訊不需填入！ 滑鼠停留在表格虛線處，可查看名詞註釋。)  
+> (為追求入門者的易讀性，這個表格是簡易版。未列於此表格的資訊不需填入！ 滑鼠停留在標示ⓘ處，可查看名詞註釋。)  
 > **提示**：測試時請確保關閉瀏覽器與遊戲。模型是否能全部塞在VRAM裡面跑，數據差異會有10~20倍落差！
 
 ---
