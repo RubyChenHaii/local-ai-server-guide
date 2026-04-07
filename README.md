@@ -1,6 +1,6 @@
 # 🖥️ local-ai-server-guide
 
-> **在自己的電腦上，免費跑起一台私有 AI 伺服器。**  
+> **在自己的電腦上，免費跑起一台私有 AI 伺服器。**
 > 從硬體選型、模型下載、API 架設，到效能調校——一份指南全搞定。
 
 ---
@@ -36,7 +36,7 @@
 | 檔案 | 說明 |
 |------|------|
 | [`GUIDE.md`](./GUIDE.md) | 完整指南的 Markdown 版本，適合直接在 GitHub 上閱讀 |
-| [`LMStudio_Guide.pdf`](./LMStudio_Guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
+| [`local_ai_server_guide.pdf`](./local_ai_server_guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
 
 ---
 
@@ -78,7 +78,7 @@
 
 ## 📊 本地效能基準測試 (Benchmark)
 
-這個表格的目標是希望建立一個數據庫，旨在幫助開發者直觀的了解，不同硬體配置在執行特定模型時的真實表現。    
+這個表格的目標是希望建立一個數據庫，旨在幫助開發者直觀的了解不同硬體配置在執行特定模型時的真實表現。    
 歡迎PR，將你的數據更新上來，讓社群一起強大！
 
 | GPU 型號 | VRAM | RAM | 模型名稱 (GGUF) | 量化等級 | [KV 量化 ⓘ](#glossary) | [t/s ⓘ](#glossary) | [TTFT ⓘ](#glossary) | VRAM 佔用 |
