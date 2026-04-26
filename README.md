@@ -86,7 +86,7 @@
 | GPU 型號 | VRAM | RAM | 模型名稱 (GGUF) | 量化等級 | [KV 量化 ⓘ](#glossary) | [t/s ⓘ](#glossary) | [TTFT ⓘ](#glossary) | VRAM 佔用 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | RTX 3080 Ti | 12GB | 96GB | Qwen 3.5 9B Instruct | Q6_K | Q4_0 | 33.60 t/s | 1.65s | 10.5GB / 12GB |
-| RTX 2060 (Mobile) | 6GB | 32GB | 待補 | N/A | N/A | N/A | N/A | N/A |
+| RTX 2060 (Mobile) | 6GB | 32GB | Gemma 4 26B A4B Instruct | Q4_K_M | Q4_0 | 4.50 t/s | 35.61s | 6GB / 6GB |
 
 > (為追求入門者的易讀性，這個表格是簡易版。未列於此表格的資訊不需填入。 點按 ⓘ 處，可查看名詞解釋。)  
 > **提示**：測試時請確保關閉瀏覽器與遊戲。模型是否能全部塞在VRAM裡面跑，數據差異會有10~20倍落差！
