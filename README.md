@@ -35,8 +35,10 @@
 
 | 檔案 | 說明 |
 |------|------|
-| [`GUIDE.md`](./GUIDE.md) | 完整指南的 Markdown 版本，適合直接在 GitHub 上閱讀 |
+| [`GUIDE.md`](./GUIDE.md) | local_ai_server_guide 的 Markdown 版本，適合直接在 GitHub 上閱讀 |
 | [`local_ai_server_guide.pdf`](./local_ai_server_guide.pdf) | 排版精美的 PDF 版本，適合離線閱讀或列印 |
+| [`LASG_Part2_CodingSetup.pdf`](./LASG_Part2_CodingSetup.pdf) | 第二階段的說明文件，讓你將 LM Studio 中的模型用於Coding！ |
+| [`LASG_Appendix_Parameters.pdf`](./LASG_Appendix_Parameters.pdf) | 附錄，對 LM Studio 中的各項參數提供解說及建議設定 |
 
 ---
 
